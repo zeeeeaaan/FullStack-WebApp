@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Golden Pre Owned Cars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+  <img src="logo.png" alt="Golden Pre Owned Cars Logo" class="logo-img" />
+  <h1>Golden Pre Owned Cars</h1>
+</div>
+
+
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="admin.html" class="btn-gold small">Admin</a>
+    </div>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero reveal">
+    <div class="hero-content">
+      <h2>Your Next Luxury Ride Awaits</h2>
+      <p>
+        Handpicked, certified pre-owned cars with transparent history
+        and unbeatable value.
+      </p>
+      <div class="hero-buttons">
+        <a href="#inventory" class="btn-gold">View Inventory</a>
+        <a href="#contact" class="btn-outline">Contact Us</a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <h3>Verified History</h3>
+          <p>Service and accident checks on every car.</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Quality Assured</h3>
+          <p>Only premium, well-maintained vehicles.</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Easy Financing</h3>
+          <p>Multiple finance options through partners.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="car-shape"></div>
+      <div class="gold-ring"></div>
+      <div class="gold-badge">Premium<br>Selection</div>
+    </div>
+  </section>
+
+  <!-- Inventory -->
+  <section id="inventory" class="inventory-section reveal">
+    <div class="section-header">
+      <h2>Featured Inventory</h2>
+      <p>Explore our latest premium used cars.</p>
+    </div>
+
+    <div class="filters">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by model or brand..."
+      />
+      <select id="brandFilter">
+        <option value="">All Brands</option>
+      </select>
+      <select id="priceFilter">
+        <option value="">All Prices</option>
+      </select>
+      <select id="yearFilter">
+        <option value="">All Years</option>
+      </select>
+    </div>
+
+    <div id="carsContainer" class="cars-grid">
+      <!-- JS will inject car cards here -->
+    </div>
+  </section>
+
+  <!-- Car Details Modal -->
+  <div id="carDetailsModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modalCarImage" src="" alt="Car image" />
+        </div>
+        <div class="modal-info">
+          <h3 id="modalCarTitle"></h3>
+          <p id="modalCarDescription"></p>
+          <div class="modal-tags">
+            <span id="modalCarYear"></span>
+            <span id="modalCarKm"></span>
+            <span id="modalCarFuel"></span>
+            <span id="modalCarTransmission"></span>
+          </div>
+          <div class="modal-price-row">
+            <div>
+              <p class="modal-label">Price</p>
+              <p id="modalCarPrice" class="modal-price"></p>
+            </div>
+            <a id="modalWhatsAppLink" class="btn-gold" target="_blank">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="about-section reveal">
+    <div class="section-header">
+      <h2>About Golden Pre Owned Cars</h2>
+      <p>Built on trust, transparency, and attention to detail.</p>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <h3>Who We Are</h3>
+        <p>
+          Golden Pre Owned Cars is a curated used-car dealership focused on
+          premium, well-maintained vehicles. Every car is handpicked and
+          inspected so you can drive with confidence.
+        </p>
+        <p>
+          From luxury sedans to practical family SUVs, we aim to match you
+          with a vehicle that fits your lifestyle and budget.
+        </p>
+      </div>
+
+      <div>
+        <h3>Why Choose Us?</h3>
+        <ul class="about-list">
+          <li>Transparent pricing with no hidden charges.</li>
+          <li>Verified car history and service records.</li>
+          <li>Flexible finance and insurance assistance.</li>
+          <li>Test drives and personalised recommendations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section reveal">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Ready to see a car in person or have any questions?</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-details">
+        <h3>Showroom Details</h3>
+        <p><strong>Phone:</strong> +91 63641 02976</p>
+        <p><strong>Email:</strong> info@goldenpreownedcars.com</p>
+        <p><strong>Location:</strong> India,KA, Brahmavara</p>
+
+        <h4>WhatsApp</h4>
+        <p>
+          Message us directly on WhatsApp for quick queries and
+          appointment bookings.
+        </p>
+        <a
+          href="https://wa.me/+916364102976"
+          target="_blank"
+          class="btn-gold small"
+        >
+          Chat on WhatsApp
+        </a>
+
+        <div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2307.469459633714!2d74.74409882493515!3d13.431778022943758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3bbcbd7abff403cb%3A0x52622581f3d5391a!2sGOLDEN%20CARS%2C%20Bypass%20Road%2C%20Bramavara%2C%20Karnataka!3m2!1d13.432297199999999!2d74.7440431!4m5!1s0x3bbcbd7abff403cb%3A0x52622581f3d5391a!2sCPJV%2BWJ7%2C%20Bypass%20Rd%2C%20Bramavara%2C%20Karnataka%20576213!3m2!1d13.432297199999999!2d74.7440431!5e0!3m2!1sen!2sin!4v1764054190579!5m2!1sen!2sin"
+    width="100%" 
+    height="400" 
+    style="border:0; border-radius:12px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+      </div>
+
+      <form
+        class="contact-form"
+        method="POST"
+        action="https://formspree.io/f/xkgazdop"
+      >
+        <h3>Send us a message</h3>
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="btn-gold full">Submit</button>
+        <p class="form-note">
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="yearSpan"></span> Golden Pre Owned Cars. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

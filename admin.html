@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Golden Pre Owned Cars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-body">
+  <header class="site-header">
+   <div class="logo">
+  <img src="logo.png" alt="Golden Pre Owned Cars Logo" class="logo-img" />
+    <h1>Golden Pre Owned Cars</h1>
+        <p>Admin Dashboard</p>
+
+</div>
+
+    <nav class="main-nav">
+      <a href="index.html">Back to Site</a>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <section class="admin-login-card">
+      <h2>Admin Login</h2>
+      <form id="adminLoginForm">
+        <label>
+          Username
+          <input type="text" id="adminUsername" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="adminPassword" required />
+        </label>
+        <button type="submit" class="btn-gold full">Login</button>
+      </form>
+    </section>
+
+    <section class="admin-panel hidden" id="adminPanel">
+      <div class="admin-panel-header">
+        <h2>Manage Cars</h2>
+        <button id="logoutBtn" class="btn-outline small">Logout</button>
+      </div>
+
+      <div class="admin-grid">
+        <form id="addCarForm" class="admin-card">
+          <h3>Add New Car</h3>
+
+          <label>
+            Car Title / Model
+            <input type="text" id="carTitle" required />
+          </label>
+
+          <label>
+            Brand
+            <input type="text" id="carBrand" required />
+          </label>
+
+          <label>
+            Price (number only)
+            <input type="number" id="carPrice" required />
+          </label>
+
+          <label>
+            Year
+            <input type="number" id="carYear" required />
+          </label>
+
+          <label>
+            KM Driven
+            <input type="number" id="carKm" required />
+          </label>
+
+          <label>
+            Fuel Type
+            <input type="text" id="carFuel" placeholder="Petrol / Diesel / Hybrid" required />
+          </label>
+
+          <label>
+            Transmission
+            <input type="text" id="carTransmission" placeholder="Automatic / Manual" required />
+          </label>
+
+          <label>
+            Image URL
+            <input
+              type="text"
+              id="carImage"
+              placeholder="https://example.com/car.jpg"
+            />
+          </label>
+
+          <label>
+            Description
+            <textarea id="carDescription" rows="4"></textarea>
+          </label>
+
+          <button type="submit" class="btn-gold full">
+            Save Car
+          </button>
+        </form>
+
+        <div class="admin-card">
+          <h3>Current Cars</h3>
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody id="adminCarsTableBody">
+              <!-- JS will inject demo rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="yearSpan"></span> Golden Pre Owned Cars. Admin Panel.</p>
+  </footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
